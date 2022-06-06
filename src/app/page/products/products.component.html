@@ -1,7 +1,10 @@
 <section class="products">
     <!-- Componente hijo encargado de pintar los hijos
-    Se le va a mandar con un for un producto a producto del array products -->
-    <app-product></app-product>
+    Se le va a mandar con un for un producto a producto del array products 
+    Lo que está entre corchetes es un atributo del componente-->
+    <app-product 
+    [product]="product"
+    *ngFor="let product of products"></app-product>
   </section>
 
 
